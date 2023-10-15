@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ca.gbc.productservice.ProductServiceApplicationTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-10-15T02:18:59" hostname="Lukass-Air" time="0.697">
+  <properties/>
+  <testcase name="updateProduct()" classname="ca.gbc.productservice.ProductServiceApplicationTests" time="0.602"/>
+  <testcase name="getAllProducts()" classname="ca.gbc.productservice.ProductServiceApplicationTests" time="0.042"/>
+  <testcase name="deleteProduct()" classname="ca.gbc.productservice.ProductServiceApplicationTests" time="0.03"/>
+  <testcase name="createProduct()" classname="ca.gbc.productservice.ProductServiceApplicationTests" time="0.021"/>
+  <system-out><![CDATA[22:18:53.625 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [ca.gbc.productservice.ProductServiceApplicationTests]: ProductServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:18:53.690 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration ca.gbc.productservice.ProductServiceApplication for test class ca.gbc.productservice.ProductServiceApplicationTests
+22:18:53.753 [Test worker] INFO org.testcontainers.utility.ImageNameSubstitutor -- Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+22:18:53.852 [Test worker] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+22:18:54.003 [Test worker] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+22:18:54.004 [Test worker] INFO org.testcontainers.DockerClientFactory -- Docker host IP address is localhost
+22:18:54.020 [Test worker] INFO org.testcontainers.DockerClientFactory -- Connected to docker: 
+  Server Version: 24.0.5
+  API Version: 1.43
+  Operating System: Docker Desktop
+  Total Memory: 7851 MB
+22:18:54.040 [Test worker] INFO tc.testcontainers/ryuk:0.5.1 -- Pulling docker image: testcontainers/ryuk:0.5.1. Please be patient; this may take some time but only needs to be done once.
+22:18:54.931 [docker-java-stream-768492861] INFO tc.testcontainers/ryuk:0.5.1 -- Starting to pull image
+22:18:54.954 [docker-java-stream-768492861] INFO tc.testcontainers/ryuk:0.5.1 -- Pulling image layers:  0 pending,  0 downloaded,  0 extracted, (0 bytes/0 bytes)
+22:18:55.322 [docker-java-stream-768492861] INFO tc.testcontainers/ryuk:0.5.1 -- Pulling image layers:  2 pending,  1 downloaded,  0 extracted, (331 KB/? MB)
+22:18:55.375 [docker-java-stream-768492861] INFO tc.testcontainers/ryuk:0.5.1 -- Pulling image layers:  1 pending,  2 downloaded,  0 extracted, (331 KB/? MB)
+22:18:55.379 [docker-java-stream-768492861] INFO tc.testcontainers/ryuk:0.5.1 -- Pulling image layers:  0 pending,  3 downloaded,  0 extracted, (331 KB/5 MB)
+22:18:55.495 [docker-java-stream-768492861] INFO tc.testcontainers/ryuk:0.5.1 -- Pulling image layers:  0 pending,  3 downloaded,  1 extracted, (2 MB/5 MB)
+22:18:55.588 [docker-java-stream-768492861] INFO tc.testcontainers/ryuk:0.5.1 -- Pulling image layers:  0 pending,  3 downloaded,  2 extracted, (2 MB/5 MB)
+22:18:55.622 [docker-java-stream-768492861] INFO tc.testcontainers/ryuk:0.5.1 -- Pulling image layers:  0 pending,  3 downloaded,  3 extracted, (5 MB/5 MB)
+22:18:55.663 [Test worker] INFO tc.testcontainers/ryuk:0.5.1 -- Creating container for image: testcontainers/ryuk:0.5.1
+22:18:55.775 [Test worker] INFO tc.testcontainers/ryuk:0.5.1 -- Container testcontainers/ryuk:0.5.1 is starting: 424f8c0961cd542486dd698f7c23333652ef9b8896b0e41d86cf96e7b7154279
+22:18:56.113 [Test worker] INFO tc.testcontainers/ryuk:0.5.1 -- Container testcontainers/ryuk:0.5.1 started in PT2.089924S
+22:18:56.118 [Test worker] INFO org.testcontainers.utility.RyukResourceReaper -- Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+22:18:56.118 [Test worker] INFO org.testcontainers.DockerClientFactory -- Checking the system...
+22:18:56.118 [Test worker] INFO org.testcontainers.DockerClientFactory -- ✔︎ Docker server version should be at least 1.6.0
+22:18:56.118 [Test worker] INFO tc.mongo:latest -- Creating container for image: mongo:latest
+22:18:56.141 [Test worker] INFO tc.mongo:latest -- Container mongo:latest is starting: e8b2c1b0e12854809943928036d033ee571ecaab4af36d6a7c6ebb8ae4e2fed0
+22:18:57.166 [Test worker] INFO tc.mongo:latest -- Container mongo:latest started in PT1.047956S
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.4)
+
+2023-10-14T22:18:58.306-04:00  INFO 94964 --- [    Test worker] c.g.p.ProductServiceApplicationTests     : Starting ProductServiceApplicationTests using Java 17.0.8.1 with PID 94964 (started by lukascanji in /Users/lukascanji/Desktop/spring for interpreter/microservices-parent/product-service)
+2023-10-14T22:18:58.307-04:00  INFO 94964 --- [    Test worker] c.g.p.ProductServiceApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2023-10-14T22:18:58.666-04:00  INFO 94964 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-10-14T22:18:58.692-04:00  INFO 94964 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 1 MongoDB repository interfaces.
+2023-10-14T22:18:58.932-04:00  INFO 94964 --- [    Test worker] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "13.4"}, "platform": "Java/Eclipse Adoptium/17.0.8.1+1"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@26495639], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@45c408a4, com.mongodb.Jep395RecordCodecProvider@369a95a5]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:64115], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@543da15], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-10-14T22:18:58.943-04:00  INFO 94964 --- [localhost:64115] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:64115, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=11905250, setName='docker-rs', canonicalAddress=e8b2c1b0e128:27017, hosts=[e8b2c1b0e128:27017], passives=[], arbiters=[], primary='e8b2c1b0e128:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000001, setVersion=1, topologyVersion=TopologyVersion{processId=652b4c10df3c47ec6c012243, counter=6}, lastWriteDate=Sat Oct 14 22:18:57 EDT 2023, lastUpdateTimeNanos=618737464869166}
+2023-10-14T22:18:59.314-04:00  INFO 94964 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-10-14T22:18:59.314-04:00  INFO 94964 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-10-14T22:18:59.317-04:00  INFO 94964 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-14T22:18:59.321-04:00  INFO 94964 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 7 ms
+2023-10-14T22:18:59.350-04:00  INFO 94964 --- [    Test worker] c.g.p.ProductServiceApplicationTests     : Started ProductServiceApplicationTests in 1.194 seconds (process running for 6.183)
+2023-10-14T22:18:59.946-04:00  INFO 94964 --- [    Test worker] c.g.p.service.ProductServiceImpl         : Updating a product with id bc4b6b6b-b346-489d-8be2-5ccafb7c8ff3
+2023-10-14T22:18:59.963-04:00  INFO 94964 --- [    Test worker] c.g.p.service.ProductServiceImpl         : Product bc4b6b6b-b346-489d-8be2-5ccafb7c8ff3 is updated
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /api/product/bc4b6b6b-b346-489d-8be2-5ccafb7c8ff3
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"111"]
+             Body = {"id":"bc4b6b6b-b346-489d-8be2-5ccafb7c8ff3","name":"Widget","description":"Widget Original Price","price":200}
+    Session Attrs = {}
+
+Handler:
+             Type = ca.gbc.productservice.controller.ProductController
+           Method = ca.gbc.productservice.controller.ProductController#updateProduct(String, ProductRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 204
+    Error message = null
+          Headers = [Location:"/api/product/bc4b6b6b-b346-489d-8be2-5ccafb7c8ff3"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = /api/product/bc4b6b6b-b346-489d-8be2-5ccafb7c8ff3
+          Cookies = []
+2023-10-14T22:19:00.004-04:00  INFO 94964 --- [    Test worker] c.g.p.service.ProductServiceImpl         : Returning a list of products
+Returned products: [Product(id=1, name=Widget, description=A useful widget, price=19.99)]
+2023-10-14T22:19:00.038-04:00  INFO 94964 --- [    Test worker] c.g.p.service.ProductServiceImpl         : Product 86c671af-8da4-41b5-abd1-d9402e5da87c is deleted
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /api/product/86c671af-8da4-41b5-abd1-d9402e5da87c
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = ca.gbc.productservice.controller.ProductController
+           Method = ca.gbc.productservice.controller.ProductController#deleteProduct(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 204
+    Error message = null
+          Headers = []
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2023-10-14T22:19:00.071-04:00  INFO 94964 --- [    Test worker] c.g.p.service.ProductServiceImpl         : Product 652b4c14a290df0e9d76db09 is savide
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
